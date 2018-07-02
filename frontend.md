@@ -73,7 +73,7 @@
     1. [Mesido 和流行飾品](https://www.mesido.com.tw/)
     2. [Elegant walk｜EW女鞋－踏上優雅的步伐！](http://www.ewshoes.tw/)
     3. [ZARA Taiwan / 台灣](https://www.zara.com/tw/)
-    4. [ZALORA時尚服飾購物網站](http://www.pinmo.com.tw/index.php)
+    4. [ZALORA時尚服飾購物網站](https://www.zalora.com.tw/)
     5. [Chiu3時尚服飾 官方網站](http://www.chiu3.com/v2/official)
 
 - 選定一指定網站並分析該網站現有的問題
