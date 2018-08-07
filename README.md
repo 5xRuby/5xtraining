@@ -18,7 +18,8 @@
 ## 目錄
 
 - [後端 & DevOps](backend.md)
-- [前端 & 設計](frontend.md)
+- [前端](frontend.md)
+- [設計](design.md)
 
 ## License
 
