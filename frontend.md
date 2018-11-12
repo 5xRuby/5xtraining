@@ -122,8 +122,10 @@
 ### 步驟13: 使用 [React Context Api](https://reactjs.org/docs/context.html#api) refactor component
   - 了解 context api 使用時機, 並在現有程式碼尋找哪個 component 適合使用 context api 並以此做 refactor
   - 此步驟可以隨時安插在其他步驟實作
- 
+
 ### （番外篇）選修課題
+- [react render props](https://reactjs.org/docs/render-props.html): 可替代 HOC 的另一種程式碼共用手法。
+- react: 用 create-react-app 建立一個新的專案，並研究用 [npm run eject](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-eject) 產生出來的 webpack 設定檔與步驟七手刻的版本有哪些差異？
 - react application test： https://jestjs.io/docs/en/tutorial-react
 - redux (container、action、reducer)
 - react: credit card form (信用卡表單)
