@@ -133,6 +133,8 @@ server 端請使用：
 	- 非常重要：migration 要確定能安全回到上一步的狀態！請養成以 `redo` 確認的習慣
 - 以 `rails c` 指令，透過 model 確認有正確連接資料庫
 	- 順便試著以 ActiveRecord 建立資料
+		- [ActiveRecord](https://guides.rubyonrails.org/active_record_basics.html#crud-reading-and-writing-data)
+		- [Active Record Callbacks](https://guides.rubyonrails.org/active_record_callbacks.html)
 - 在 GitHub 上發 PR 並請人 review
 
 ### 步驟7: 讓任務能夠被新增、修改、刪除
