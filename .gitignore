@@ -29,3 +29,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+
+# ignore "erd" the image file in the directory
+erd.jpg
