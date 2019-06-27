@@ -1,0 +1,22 @@
+<h1>View task</h1>
+<%= link_to 'Back to Task List', tasks_path %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @task.title %></td>
+      <td><%= @task.description %></td>
+      <td>
+        <%= link_to 'Edit', edit_task_path(@task.id) %>
+        <%= link_to 'Delete', task_path(@task.id), method: 'delete', data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+  </tbody>
+</table>
