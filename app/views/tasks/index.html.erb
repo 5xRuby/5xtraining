@@ -1,0 +1,27 @@
+<h1>Task List</h1>
+<%= link_to 'Create new task', new_task_path %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.title %></td>
+        <td>
+          <span class="ellipsis"><%= task.description %></span>
+          <%= link_to '(View)', task_path(task.id) %>
+        </td>
+        <td>
+          <%= link_to 'Edit', edit_task_path(task.id) %>
+          <%= link_to 'Delete', task_path(task.id), method: 'delete', data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

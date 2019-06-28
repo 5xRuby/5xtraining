@@ -1,0 +1,8 @@
+.ellipsis {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
