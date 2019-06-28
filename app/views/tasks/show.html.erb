@@ -14,8 +14,8 @@
       <td><%= @task.title %></td>
       <td><%= @task.description %></td>
       <td>
-        <%= link_to 'Edit', edit_task_path(@task.id) %>
-        <%= link_to 'Delete', task_path(@task.id), method: 'delete', data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Edit', edit_task_path(id: @task.id) %>
+        <%= link_to 'Delete', task_path(id: @task.id), method: 'delete', data: { confirm: 'Are you sure?' } %>
       </td>
     </tr>
   </tbody>
