@@ -50,6 +50,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'guard-rspec', '~> 4.7', '>= 4.7.3'
+  gem 'travis', '~> 1.8', '>= 1.8.10'
 end
 
 group :test do
