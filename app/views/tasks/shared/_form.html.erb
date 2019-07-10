@@ -1,13 +1,21 @@
-<%= form_for(task) do |form| %>
+<% if task.errors.any? %>
+  <ul class="error_message">
+    <% task.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for(task, html: { class: 'form_task' }) do |form| %>
   <div>
     <%= form.label :title, 'Title:' %>
     <%= form.text_field :title, placeholder: 'e.g. "Sweep the floor"' %>
-  </div>
+  </div>  
   
   <div>
     <%= form.label :description, 'Description:' %>
-    <%= form.text_field :description, placeholder: 'e.g. "From first floor to the attic."' %>
-  </div>
-  
+    <%= form.text_area :description, placeholder: 'e.g. "Also take garbage out to the bin"' %>
+  </div>  
+
   <%= form.submit %>
 <% end %>
