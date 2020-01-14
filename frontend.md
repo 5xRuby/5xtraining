@@ -74,7 +74,8 @@
 - 不使用 React、其它 library, 只能用 jquery + css 實作官網上的元件(bootstrap 只可用 grid system、排版用的 class)
 - 請分成三階段發 PR, header、footer、content
 - 只需考量 sm、md、lg 3種 RWD breakpoint
-- Bootstrap Carousel 元件的實作需要達成以下要求：
+- Carousel 元件的實作需要達成以下要求：
+  - 不使用 BS 內建的
   - 點下圓點按鈕可以跳到指定的 Slide
   - 自動播放（5秒換頁一次）
   - 按下圓點按鈕可以停止自動播放
