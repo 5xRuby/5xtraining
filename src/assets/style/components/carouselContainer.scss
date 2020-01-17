@@ -1,0 +1,35 @@
+.arrowBtn {
+  width: 10%;
+  z-index: 100;
+  background-color: transparent;
+  border: none;
+  font-size: 80px;
+  text-shadow: 0 0 3px black;
+  color: white;
+  transition: color .5s;
+  &:hover {
+    color: gray
+  }
+}
+
+.pointContainer {
+  z-index: 100;
+
+  .carouselPoint {
+    height: 12px;
+    width: 12px;
+    border: 1px #fff solid;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: background-color 1s;
+
+    &:hover {
+      background-color: gray;
+    }
+
+    &--active {
+      background-color: #D90845;
+    }
+  }
+}

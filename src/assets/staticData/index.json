@@ -1,0 +1,104 @@
+{
+  "carousel": [{
+    "fileName": "5xruby.jpg",
+    "to": "/"
+  }, {
+    "fileName": "astro.jpg",
+    "to": "/"
+  }, {
+    "fileName": "imcoding.jpg",
+    "to": "/"
+  }, {
+    "fileName": "ruby.jpg",
+    "to": "/"
+  }],
+  "sections": [{
+      "title": "關於五倍紅寶石 About 5xRuby",
+      "cards": [{
+        "title": "網頁設計",
+        "title2": "前後端課程教學",
+        "content": "帶你掌握程式技能轉職工程師，程式課程從入門到進階讓你快速上手，學員好評推薦轉職課程！",
+        "fileName": "1.png"
+      }, {
+        "title": "頂尖技術",
+        "title2": "網頁製作、專案開發",
+        "content": "網站開發到行動裝置 App 工程服務、系統設計開發甚至系統架設，提供專業的建議與頂尖的技術。",
+        "fileName": "2.png"
+      }, {
+        "title": "資訊軟體開發",
+        "title2": "技術顧問",
+        "content": "協助您將現有人力快速打造為 Ruby/Rails 團隊，無須經歷繁瑣的人才招募就有即戰力！",
+        "fileName": "3.png"
+      }, {
+        "title": "前後端工程師",
+        "title2": "社群經營",
+        "content": "Ruby 社群經營、舉辦各類活動，促進 Ruby 社群發展，歡迎前後端",
+        "fileName": "4.png"
+      }]
+    },
+    {
+      "title": "熱門網頁設計課程推薦",
+      "cards": [{
+        "title": "Ruby on Rails 實戰課程 - 假日班",
+        "content": "後臺開發不是夢！實戰程度百分百的 Ruby & Rails 課程 。具備高度生產力，簡潔、有效率的編寫，即便是初學者也能快速上手的 Ruby 程式語言 ，搭配 Rails 框架，短時間內部署自己的專案。從電商網站到金流平台串接， 5 天課程帶您走過專案流程，熟悉整體架構。",
+        "fileName": "ror.jpg",
+        "date": "2019-12-07",
+        "hours": "30",
+        "statusIndex": "open",
+        "authorIndex": "1"
+      }, {
+        "title": "工作上用得到的函數式程式設計：從觀念到實務 - 假日班",
+        "content": "隨著多核心電腦成為主流、分散式系統架構也成為顯學，函數式程式設計的重要性也與日俱增。跟物件導向程式設計相比，函數式程式設計著重於用更簡潔的方向表達程式碼真正的意圖。因此當學會用與物件導向程式程計不同的角度來寫程式後，可以讓你在切換不同的程式語言時依然能游刃有餘。這門課將會透過一門好入手的非純函數式語言 Elixir 開始， 教大家最重要的函數式程式設計觀念。 接著介紹如何在 Ruby、 JavaScript(也許還有一點 C#) 上使用函數式程式設計的技巧。 讓你寫出精簡、 好除錯的厲害程式碼！ ",
+        "fileName": "function.jpg",
+        "date": "2020-02-22",
+        "hours": "9",
+        "statusIndex": "none",
+        "authorIndex": "2"
+      }, {
+        "title": "網頁設計班 - 假日班",
+        "content": "你還在困擾網頁該怎麼做 RWD 嗎？講師手把手教學，帶你快速上手 RWD，不僅教你技術及方法，還要建立你正確的網頁觀念，融會貫通後你將大幅提高自學能力，降低卡關浪費時間查找的困擾！",
+        "fileName": "rwd.jpg",
+        "date": "2020-03-08",
+        "hours": "24",
+        "statusIndex": "none",
+        "authorIndex": "3"
+      }]
+    },
+    {
+      "title": "網頁課程推薦",
+      "cards": [{
+        "fileName": "1.jpg",
+        "authorName": "Victor Lam",
+        "content": "Programmer 最有價值的是經驗值，「五倍紅寶石」的導師都是社群內數一數二的資深 Rubyist，由他們來帶領學員一探 Ruby 世界的神奇之處，實在是最佳選擇。",
+        "job": "連續創業家，自由工作者"
+      }, {
+        "fileName": "2.jpg",
+        "authorName": "Jason Hs",
+        "content": "Eddie and his team are of the most dedicated Ruby evangelists I have ever come across. With their passion and professionalism, Ruby learners will leapfrog in their progress.",
+        "job": "founder of The Big Questions & TEDxTaipei"
+      }]
+    },
+    {
+      "title": "案例作品 Showcase",
+      "cards": [{
+        "title": "SpaceNextDoor",
+        "content": "Space Next Door is inspired by the sharing economy in which we hope to encourage people to put up their unused space so that users looking for personal or business storage space have better options, closer to where they need it. We are striving to build a trusted community marketplace for you to list, discover and book the nearest and best space at affordable prices.",
+        "fileName": "space_next_door.png"
+      }, {
+        "title": "Shopmatic Go app",
+        "content": "Shopmatic Go is an exciting online platform where you can create a unique and comprehensive online store for your business, in a matter of minutes.",
+        "fileName": "shopmatic_go.png"
+      }, {
+        "title": "跨境電子商務 Shopmatic",
+        "content": "Shopmatic manages the entire ecosystem for anyone wanting to sell online. We go the extra mile to ensure that we help you in every step of the process to grow your business online - from developing your own unique webstore, to listing you on marketplaces and social channels, to providing you insights on how to sell online.",
+        "fileName": "shopmatic.jpg"
+      }]
+    },
+    {
+      "title": "想更瞭解我們嗎？",
+      "content1": "您可以看看常見問題或者直接線上洽詢，會有親切的客服人員回答您的問題，",
+      "content2": "也可以透過社群網站隨時關注我們的動態。",
+      "fileNames": ["icon-fb.png", "icon-twitter.png"]
+    }
+  ]
+}

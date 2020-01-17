@@ -1,0 +1,143 @@
+@import "./variables.scss";
+
+/*color*/
+@each $key,
+$colorCode in $colorMap {
+  .text-#{$key} {
+    color: $colorCode;
+  }
+
+  .bg-#{$key} {
+    background-color: $colorCode;
+  }
+}
+
+/*html tag*/
+body {
+  font-family: 微軟正黑體, arial;
+  color: #555;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+}
+
+/*position*/
+.position-r {
+  position: relative;
+}
+
+.position-a {
+  position: absolute;
+}
+
+/*component*/
+.titleUnderLine {
+  height: 3px;
+  width: 80px;
+}
+
+.hotClass__content {
+  height: 100px;
+}
+
+.aboutCard__img {
+  width: 120px;
+  height: 120px;
+}
+
+.knowMore_content {
+  line-height: 38px;
+}
+
+.card-border {
+  border: 1px solid #ddd;
+}
+
+.classRecommend__img {
+  max-width: 78px;
+  border-radius: 50%;
+}
+
+/*font*/
+@each $key,
+$size in $fontSizeMap {
+  .font-size-#{$key} {
+    font-size: $size;
+  }
+}
+
+.font-w-bold {
+  font-weight: 700;
+}
+
+/*size*/
+.h-100per {
+  height: 100%;
+}
+
+.w-100per {
+  width: 100%;
+}
+
+.w-80per {
+  width: 80%;
+}
+
+.vw-100 {
+  width: 100vw
+}
+.mw-100per{
+  max-width: 100%;
+}
+
+/*layout*/
+.normal-radius {
+  border-radius: $radiusVar;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.j-c-c {
+
+  justify-content: center;
+}
+
+.a-i-c {
+  align-items: center;
+
+}
+
+.a-i-s {
+  align-items: stretch;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*special*/
+.overflow-h {
+  overflow: hidden;
+}
