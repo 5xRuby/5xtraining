@@ -78,7 +78,7 @@
   - 不使用 BS 內建的
   - 點下圓點按鈕可以跳到指定的 Slide
   - 自動播放（5秒換頁一次）
-  - 滑鼠在 Carousel 上時候停止自動播放
+  - 滑鼠在 Carousel 上時自動播放
 - 目標著重於 jquery、javascript、css 熟悉度
 
 ### 步驟5: 使用 React 改寫 [五倍官網首頁](https://5xruby.tw/)
