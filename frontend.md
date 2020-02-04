@@ -82,8 +82,16 @@
 - 目標著重於 jquery、javascript、css 熟悉度
 
 ### 步驟5: 使用 React 改寫 [五倍官網首頁](https://5xruby.tw/)
+- 使用 `bootstrap` 作為 css 框架，請使用 yarn 安裝引入
+- 除了 React App 進入點之外不要使用 jQuery 或是 Vanilla DOM API
 - 將靜態資料抽離存成 json 檔, 並以 react props 的方式帶入
 - 目標著重於 React 元件模組化與 props 傳遞
+- 只需考量 sm、md、lg 3種 RWD breakpoint
+- Carousel 元件的實作需要達成以下要求：
+  - 不使用 BS 內建的，手刻 Carousel React 元件
+  - 點下圓點按鈕可以跳到指定的 Slide
+  - 自動播放（5秒換頁一次）
+  - 滑鼠在 Carousel 上時暫停自動播放
 
 ### 步驟6: 使用 React 製作 [/contacts](https://5xruby.tw/contacts) 頁面
 - 必須符合 Controlled Components 特性
