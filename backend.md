@@ -208,7 +208,7 @@ server 端請使用：
 	- 之後的步驟也需要這麼做，請養成習慣
 - 建立 search index
 	- 準備一定程度的測試資料後，觀察 log/development.log 以確認加入 index 後對速度的改善
-	- 【選項】使用 PostreSQL 的 explain 等功能，檢視資料庫端的 index 使用狀況
+	- 【選項】使用 PostgreSQL 的 explain 等功能，檢視資料庫端的 index 使用狀況
 - 針對查詢功能增加 model spec（feature spec 也要擴充）
 
 ### 步驟16: 設定優先順序
