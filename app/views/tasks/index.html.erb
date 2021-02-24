@@ -1,7 +1,24 @@
 <h1>Task</h1>
-<%= link_to 'new task', new_task_path %>
+<div>
+  <%= link_to 'new task', new_task_path %>
+</div>
 
-<% @tasks.each do |task| %>
-  <%= task.title %>
-  <%= task.content %>
-<% end %>
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>title</th>
+      <th>Content</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.title %></td>
+        <td><%= task.content %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
