@@ -149,7 +149,7 @@ server 端請使用：
 - 寫 spec 的事前準備
 	- 準備 `spec/spec_helper.rb` 、`spec/rails_helper.rb`
 - 針對任務的功能來寫 feature spec
-- 導入 Travis CI 之類的 CI 工具，每次 Push 後自動跑 Spec
+- 導入 GitHub Action CI 之類的 CI 工具，每次 Push 後自動跑 Spec
 	- 太難的話可以請導師幫忙設定
 
 ### 步驟9: 將網站中的中文部分共用化
