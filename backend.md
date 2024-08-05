@@ -38,13 +38,20 @@
 
 請以下列程式語言、網站開發框架及資料庫系統的最新穩定版本進行開發：
 
-- Ruby
-- Rails7
-- PostgreSQL
+- Ruby 3.3 或以上版本
+- Rails 7.1 或以上版本
+- PostgreSQL 15 或以上版本
 
-server 端請使用：
+### 前端相關工具鍊推薦
 
-- Heroku
+- TailwindCSS
+- Hotwire
+- Stimulus JS or Alpine.JS
+
+### server 端請使用：
+
+- render.com
+- 其它任何類似的 PAAS
 
 ※ 本教材中對效能、資安沒有特別的要求，但仍需要有一定的品質。網站效能太差的話，會被要求改善。
 
