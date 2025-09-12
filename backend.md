@@ -72,7 +72,7 @@
 ## 參考資料
 
 - Git: [https://gitbook.tw/](https://gitbook.tw/)
-- Rails: [https://railsbook.tw/](https://railsbook.tw/)
+- Rails new with Typecraft: https://www.youtube.com/playlist?list=PLHFP2OPUpCeZcPutT9yn4-e0bMmrn5Gd1
 
 ## 必修課題
 
