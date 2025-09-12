@@ -51,6 +51,7 @@
 ### server 端請使用：
 
 - render.com
+- fly.io
 - 其它任何類似的 PAAS
 
 ※ 本教材中對效能、資安沒有特別的要求，但仍需要有一定的品質。網站效能太差的話，會被要求改善。
@@ -167,7 +168,7 @@
 - 針對任務的功能來寫 feature spec
 - 用Factory-Bot 與 faker 建立資料
 
-※ 參照 Better Specs ， 將測試寫得更簡潔
+※ 參照 [Better Specs](https://www.betterspecs.org/) ， 將測試寫得更簡潔
 - 導入 GitHub Action CI 之類的 CI 工具，每次 Push 後自動跑 Spec
 	- 太難的話可以請導師幫忙設定
 - 安裝 rubocop 以統一程式風格
@@ -201,7 +202,7 @@
 
 目的：將 master 分支上的簡易任務管理系統推上線
 
-- 試著將網站 deploy 到 Render 上
+- 試著將網站 deploy 到 [Render](https://render.com/) 上
 	- 沒有帳號的話，請建立帳號
 - 看一下被推上 Render 的網站
   - 接下來就會在這裡建立任務並繼續開發
@@ -227,7 +228,7 @@
 - 在設定條件查詢時，請觀察 log 並確認 SQL 的變化
 	- 之後的步驟也需要這麼做，請養成習慣
 - 建立 search index
-	- 使用 Factory Bot 和 Faker 準備多筆資料 
+	- 使用 [Factory Bot](https://github.com/thoughtbot/factory_bot_rails) 和 [Faker](https://github.com/faker-ruby/faker) 準備多筆資料 
 	- 準備一定程度的測試資料後，觀察 log/development.log 以確認加入 index 後對速度的改善
 	- 【選項】使用 PostgreSQL 的 explain 等功能，檢視資料庫端的 index 使用狀況
 - 針對查詢功能增加 model spec（feature spec 也要擴充）
@@ -241,7 +242,7 @@
 
 ### 步驟17: 增加分頁功能
 
-- 使用 kaminari gem 在列表頁面加入分頁功能
+- 使用 [Pagy gem](https://rubygems.org/gems/pagy) 在列表頁面加入分頁功能
 
 ### 步驟18: 加入設計
 
