@@ -42,17 +42,31 @@
 - Rails 7.1 或以上版本
 - PostgreSQL 15 或以上版本
 
-### 前端相關工具鍊推薦
+### 前端相關工具
 
-- TailwindCSS
+#### CSS
+
+- TailwindCSS v4
+- 推薦使用
+  - [TailwindCSS UI](https://tailwindcss.com/plus)
+  - [Flowbite](https://flowbite.com/)
+
+#### JS
+
 - Hotwire
-- Stimulus JS or Alpine.JS
+- Stimulus JS：比較麻煩的任務
+- Alpine.JS：一般性任務，容易快速上手且大部份 case 可以在 JS 寫在 view
+
+#### View Component
+
+- [View Component](https://viewcomponent.org/) + [LookBook](https://lookbook.build/)
 
 ### server 端請使用：
 
 - render.com
 - fly.io
 - 其它任何類似的 PAAS
+- 申請新的 Vultr 或 DigitalOcean 帳號可以免費試用
 
 ※ 本教材中對效能、資安沒有特別的要求，但仍需要有一定的品質。網站效能太差的話，會被要求改善。
 
