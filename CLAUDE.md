@@ -9,7 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## 結構
 
 - `README.md` — 教程總覽與角色定義（mentee／mentor）
-- `backend.md` — 後端 & DevOps 教程（主要教材，26 個必修步驟＋選修課題）：以 Rails 7.1+／Ruby 3.3+／PostgreSQL 最新穩定版開發任務管理系統
+- `backend.md` — 後端 & DevOps 教程（主要教材，26 個必修步驟＋選修課題）：以 Rails 8.2+／Ruby 4.0+／PostgreSQL 最新穩定版開發任務管理系統（測試用 Minitest、Ruby 以 mise 安裝）
 - `topics.md` — 開發技巧集（Git／GitHub／Rails 開發環境），譯自 el-training
 - `design.md` — 設計教程：Sketch 設計稿 + Rails/Bootstrap 切版
 
