@@ -249,8 +249,8 @@ Rails 7 起，刪除功能有兩個和以往不同的寫法要注意：
 
 - 認識 `rails new` 產生的 `test/` 目錄結構（`test_helper.rb`、`application_system_test_case.rb` 等）
 - 針對任務的功能撰寫 system test（`rails generate system_test tasks`，以 `rails test:system` 執行）
-- 以 fixtures 準備測試資料
-	- 【選項】也可以和導師討論改用 [Factory Bot](https://github.com/thoughtbot/factory_bot_rails) 與 Faker
+- 使用 [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails) 與 [Faker](https://github.com/faker-ruby/faker) 建立測試資料（Minitest 也能搭配 Factory Bot 使用）
+	- Rails 內建的 fixtures 機制也請認識一下，理解兩者的差異
 - 導入 GitHub Actions 之類的 CI 工具，每次 Push 後自動跑測試
 	- 可參考 el-training 提供的 [workflow 設定範例](https://github.com/everyleaf/el-training/tree/master/github_actions/.github/workflows)
 	- 太難的話可以請導師幫忙設定
@@ -332,7 +332,7 @@ Rails 7 起，刪除功能有兩個和以往不同的寫法要注意：
 - 在設定條件查詢時，請觀察 log 並確認 SQL 的變化
 	- 之後的步驟也需要這麼做，請養成習慣
 - 建立 search index
-	- 使用 seed 搭配 [Faker](https://github.com/faker-ruby/faker) 準備多筆資料
+	- 使用 [Factory Bot](https://github.com/thoughtbot/factory_bot_rails) 和 [Faker](https://github.com/faker-ruby/faker) 準備多筆資料
 	- 準備一定程度的測試資料後，觀察 log/development.log 以確認加入 index 後對速度的改善
 	- 補充：index 貼在常出現於查詢條件（WHERE）、關聯（JOIN）、排序（ORDER BY）的欄位上，可以大幅改善查詢速度；但不適合貼在更新頻繁、或值的種類很少（低選擇性）的欄位上。本教材中「結束時間」是比較適合練習貼 index 的欄位
 	- 【選項】使用 PostgreSQL 的 explain 等功能，檢視資料庫端的 index 使用狀況
