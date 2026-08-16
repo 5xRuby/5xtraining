@@ -18,6 +18,7 @@
 ## 目錄
 
 - [後端 & DevOps](backend.md)
+- [AI 輔助學習與開發指引](ai-guide.md)
 - [設計](design.md)
 - [開發技巧集](topics.md)
 
