@@ -38,8 +38,8 @@
 
 請以下列程式語言、網站開發框架及資料庫系統的最新穩定版本進行開發：
 
-- Ruby 3.3 或以上版本
-- Rails 7.1 或以上版本
+- Ruby 4.0 或以上版本
+- Rails 8.2 或以上版本
 - PostgreSQL（最新穩定版本）
 
 ### 開發輔助工具
@@ -111,7 +111,7 @@
 
 #### 1-1: 安裝 Ruby
 
-- 利用 [rbenv](https://github.com/rbenv/rbenv) 或 [RVM](https://rvm.io) 安裝最新版本的 Ruby
+- 利用 [mise](https://mise.jdx.dev/) 安裝最新版本的 Ruby（`mise use -g ruby@latest`）
 - 以 `ruby -v` 指令來確認 Ruby 的版本
 
 #### 1-2: 安裝 Rails
@@ -198,14 +198,6 @@ GitHub 會透過 `dependabot` 自動建立 gem 版本更新的 PR。研習期間
 
 ### 步驟6: 建立任務 model
 
-在使用 Rails 的 generator 之前，先設定讓 generator 不要自動產生測試檔案（自動測試會在步驟9 導入）。請在 `config/application.rb` 加入以下設定：
-
-```ruby
-config.generators do |g|
-  g.test_framework nil # TODO: 導入 RSpec 前，先不要產生測試檔
-end
-```
-
 開始來做管理任務所需要的 CRUD。一開始先簡單做，只要能記錄名字和任務內容即可。
 
 - 以 `rails generate` 指令建立 CRUD 所需的 model 類別
@@ -253,15 +245,13 @@ Rails 7 起，刪除功能有兩個和以往不同的寫法要注意：
 
 ### 步驟9: 寫 E2E 測試
 
-- 寫 spec 的事前準備
-	- 安裝 gem 'rspec-rails'
-	- 移除步驟6 在 `config/application.rb` 加入的 `test_framework nil` 設定
-	- 準備 `spec/spec_helper.rb` 、`spec/rails_helper.rb`
-- 針對任務的功能來寫 system spec
-- 用 Factory Bot 與 Faker 建立資料
+測試框架使用 Rails 內建的 [Minitest](https://guides.rubyonrails.org/testing.html)，不另外安裝 RSpec。
 
-※ 參照 [Better Specs](https://www.betterspecs.org/) ， 將測試寫得更簡潔
-- 導入 GitHub Actions 之類的 CI 工具，每次 Push 後自動跑 Spec
+- 認識 `rails new` 產生的 `test/` 目錄結構（`test_helper.rb`、`application_system_test_case.rb` 等）
+- 針對任務的功能撰寫 system test（`rails generate system_test tasks`，以 `rails test:system` 執行）
+- 以 fixtures 準備測試資料
+	- 【選項】也可以和導師討論改用 [Factory Bot](https://github.com/thoughtbot/factory_bot_rails) 與 Faker
+- 導入 GitHub Actions 之類的 CI 工具，每次 Push 後自動跑測試
 	- 可參考 el-training 提供的 [workflow 設定範例](https://github.com/everyleaf/el-training/tree/master/github_actions/.github/workflows)
 	- 太難的話可以請導師幫忙設定
 - 安裝 rubocop 以統一程式風格
@@ -282,7 +272,7 @@ Rails 7 起，刪除功能有兩個和以往不同的寫法要注意：
 ### 步驟12: 任務列表以建立時間排序
 
 - 資料預設是以 id 進行排序，請試著讓它以建立時間排序
-- 完成後，撰寫此功能 system spec
+- 完成後，撰寫此功能 system test
 
 ### 步驟13: 資料驗證
 
@@ -328,7 +318,7 @@ Rails 7 起，刪除功能有兩個和以往不同的寫法要注意：
 
 - 任務可設定結束時間
 - 列表頁可以結束時間排序
-- 擴充 spec
+- 擴充測試
 - PR/review 後佈署
 
 ### 步驟17: 加入狀態，並且能夠查詢
@@ -342,11 +332,11 @@ Rails 7 起，刪除功能有兩個和以往不同的寫法要注意：
 - 在設定條件查詢時，請觀察 log 並確認 SQL 的變化
 	- 之後的步驟也需要這麼做，請養成習慣
 - 建立 search index
-	- 使用 [Factory Bot](https://github.com/thoughtbot/factory_bot_rails) 和 [Faker](https://github.com/faker-ruby/faker) 準備多筆資料
+	- 使用 seed 搭配 [Faker](https://github.com/faker-ruby/faker) 準備多筆資料
 	- 準備一定程度的測試資料後，觀察 log/development.log 以確認加入 index 後對速度的改善
 	- 補充：index 貼在常出現於查詢條件（WHERE）、關聯（JOIN）、排序（ORDER BY）的欄位上，可以大幅改善查詢速度；但不適合貼在更新頻繁、或值的種類很少（低選擇性）的欄位上。本教材中「結束時間」是比較適合練習貼 index 的欄位
 	- 【選項】使用 PostgreSQL 的 explain 等功能，檢視資料庫端的 index 使用狀況
-- 針對查詢功能增加 model spec（system spec 也要擴充）
+- 針對查詢功能增加 model test（system test 也要擴充）
 - 【選項】把查詢條件和排序條件的所有組合整理成表格
 	- 目的是掌握應用程式中較複雜的行為
 
@@ -358,7 +348,7 @@ Rails 的 Form Object，指的是：畫面上以表單（form）形式出現、�
 
 - 在任務上加入優先順序（高、中、低）
 - 列表頁可依優先順序做排序
-- 擴充 system spec
+- 擴充 system test
 - PR/review 後佈署
 
 ### 步驟19: 增加分頁功能
