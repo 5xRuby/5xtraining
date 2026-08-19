@@ -296,7 +296,8 @@ Rails 7 起，刪除功能有兩個和以往不同的寫法要注意：
 	- 資料庫請使用 [Neon](https://neon.tech/) 或 [Supabase](https://supabase.com/) 的免費 PostgreSQL（Render 免費方案的 PostgreSQL 只能使用 30 天，不建議使用）
 		- 在 Render 上以 `DATABASE_URL` 環境變數設定連線字串
 		- 藉此理解 app 和資料庫分開託管、以環境變數注入設定的實務做法
-- 【選項】想順便學 Docker 的人，可以改部署到 [Hugging Face Spaces](https://huggingface.co/spaces)（Docker Space）
+- 【選項】想順便學 Docker 的人，可以改部署到 [Hugging Face Spaces](https://huggingface.co/spaces)（Docker Space ）*2026/8更新：需付費才可以使用
+Docker Space* 
 	- 直接使用 `rails new` 產生的 `Dockerfile`，但 HF 要求 app 聽 port 7860
 	- 部署方式是把程式碼 push 到 HF 提供的 git remote
 	- 免費方案 48 小時沒有流量會休眠，喚醒時有冷啟動延遲
