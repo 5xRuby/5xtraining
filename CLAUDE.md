@@ -19,7 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 開發環境以 Overmind（非 foreman）跑 `Procfile.dev`
 - 背景工作：ActiveJob + Solid Queue
 - 部署主線：Render 免費 web service + Neon/Supabase 免費 PostgreSQL；選項為 Hugging Face Spaces（Docker）
-- 手刻原則：禁用 AASM、acts_as_tag；查詢功能手刻 Form Object（不用 Ransack）；認證完全手刻（不用 Devise，也不用 `has_secure_password`，直接用 bcrypt gem）
+- 手刻原則：禁用 AASM、acts_as_tag；查詢功能手刻 Ransack 風格的 scopes（`title_cont`、`status_eq` 等，不用 Ransack gem 也不用 Form Object）；認證完全手刻（不用 Devise，也不用 `has_secure_password`，直接用 bcrypt gem）
 
 ## 編輯注意
 
